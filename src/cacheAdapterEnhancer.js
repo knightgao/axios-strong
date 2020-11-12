@@ -14,7 +14,7 @@ const CAPACITY = 100;
  */
 export default function cacheAdapterEnhancer(adapter, options = {}) {
   const Temp = {
-    enabledByDefault: options?.enabledByDefault ? true : false,
+    enabledByDefault: options && options.enabledByDefault ? true : false,
     cacheFlag: options && options.cacheFlag ? options.cacheFlag : "cache",
     defaultCache: new LRUCache({
       maxAge: options && options.maxAge ? options.maxAge : FIVE_MINUTES,
