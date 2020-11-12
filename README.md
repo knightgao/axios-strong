@@ -29,3 +29,7 @@ myaxios.get("/users", { cache: true }); // 发请求了
 myaxios.get("/users", { cache: true }); // 没法请求，走了缓存
 myaxios.get("/users", { cache: false }); // 不走缓存 发了请求
 ```
+
+
+**Heavily inspired by [axios-extensions](https://github.com/kuitos/axios-extensions)**
+
