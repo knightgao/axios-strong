@@ -5,13 +5,13 @@ axios 的扩展,使得他支持缓存
 ## Installing
 
 ```bash
-npm i @gaoy/axios-strong -S
+npm i @devgaoy/axios-strong -S
 ```
 
 使用例子
 
 ```javascript
-import { cacheAdapterEnhancer } from "@gaoy/axios-strong";
+import { cacheAdapterEnhancer } from "@devgaoy/axios-strong";
 const myaxios = axios.create({
   baseURL: base,
   timeout: 10000, // 请求超时时间
@@ -30,6 +30,4 @@ myaxios.get("/users", { cache: true }); // 没法请求，走了缓存
 myaxios.get("/users", { cache: false }); // 不走缓存 发了请求
 ```
 
-
 **Heavily inspired by [axios-extensions](https://github.com/kuitos/axios-extensions)**
-

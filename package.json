@@ -1,6 +1,6 @@
 {
   "name": "@devgaoy/axios-strong",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "axios的扩展,使支持缓存",
   "main": "dist/vueLibs.umd.js",
   "module": "dist/vueLibs.esm.js",
