@@ -1,22 +1,25 @@
 {
-  "name": "@gaoy/axios-strong",
-  "version": "0.0.5",
-  "description": "axios 的扩展,使得他支持缓存",
+  "name": "@devgaoy/axios-strong",
+  "version": "1.0.0",
+  "description": "axios的扩展,使支持缓存",
   "main": "dist/vueLibs.umd.js",
   "module": "dist/vueLibs.esm.js",
   "unpkg": "dist/vueLibs.min.js",
   "homepage": "https://github.com/knightgao/axios-strong",
   "repository": "https://github.com/knightgao/axios-strong.git",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npm run build:browser && npm run build:es && npm run build:umd",
     "build:browser": "rollup --config build/rollup.config.browser.js",
     "build:es": "rollup --config build/rollup.config.es.js",
     "build:umd": "rollup --config build/rollup.config.umd.js"
   },
-  "author": "gaoy",
+  "author": "gaoy.sz",
   "license": "MIT",
   "dependencies": {
-    "lru-cache": "^5.1.1"
+    "lru-cache": "^6.0.0"
   },
   "peerDependencies": {
     "axios": "*"
@@ -30,7 +33,6 @@
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
-    "@types/lru-cache": "^4.1.1",
     "babel-cli": "^6.26.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "rollup": "^2.33.1"
