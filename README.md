@@ -5,6 +5,7 @@ axios 的扩展,使得他支持缓存
 
 
 使用例子
+
 const myaxios = axios.create({
   baseURL: base,
   timeout: 10000, // 请求超时时间

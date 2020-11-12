@@ -3,13 +3,6 @@ import LRUCache from "lru-cache";
 import buildSortedURL from "./utils/buildSortedURL";
 import isCacheLike from "./utils/isCacheLike";
 
-// declare module "axios" {
-// 	interface AxiosRequestConfig {
-// 		forceUpdate?: boolean;
-// 		cache?: boolean | ICacheLike<any>;
-// 	}
-// }
-
 const FIVE_MINUTES = 1000 * 60 * 5;
 const CAPACITY = 100;
 
@@ -21,7 +14,7 @@ const CAPACITY = 100;
  */
 export default function cacheAdapterEnhancer(adapter, options = {}) {
   const Temp = {
-    enabledByDefault: options && options.enabledByDefault ? true : false,
+    enabledByDefault: options?.enabledByDefault ? true : false,
     cacheFlag: options && options.cacheFlag ? options.cacheFlag : "cache",
     defaultCache: new LRUCache({
       maxAge: options && options.maxAge ? options.maxAge : FIVE_MINUTES,
