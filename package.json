@@ -1,5 +1,5 @@
 {
-  "name": "@ds/axioscache",
+  "name": "@gaoy/axios-strong",
   "version": "0.0.5",
   "description": "axios 的扩展,使得他支持缓存",
   "main": "dist/vueLibs.umd.js",
