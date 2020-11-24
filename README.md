@@ -1,4 +1,4 @@
-# @gaoy/axios-strong
+# @devgaoy/axios-strong
 
 axios 的扩展,使得他支持缓存
 
